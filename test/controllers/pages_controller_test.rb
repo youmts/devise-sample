@@ -8,7 +8,7 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
 
   test "should get show" do
     get pages_show_url
-    assert_response :success
+    assert_redirected_to new_user_session_path
   end
 
 end
